@@ -1,0 +1,98 @@
+.srea-loader {
+  border: 3px solid rgba(200, 200, 200, 0.7);
+  border-top: 3px solid rgba(66, 66, 66, 0.5);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  margin: 5px;
+  animation: spin 1s linear infinite;
+}
+
+.srea-result-badge {
+  color: #ffffff;
+  padding: 6px;
+  text-align: center;
+  line-height: 10px;
+  font-size: 13px;
+}
+
+.srea-result-badge.srea-badge-success {
+  background-color: #3c932c;
+}
+
+.srea-result-badge.srea-badge-error {
+  background-color: #932c2c;
+}
+
+.srea-modal-close-btn {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #747474;
+  left: 30px;
+  bottom: 20px;
+}
+
+.srea-modal-close-btn::before {
+  content: '';
+  position: absolute;
+  top: 13px;
+  height: 2px;
+  width: 30px;
+  background-color: #747474;
+  transform: rotate(45deg);
+}
+
+.srea-modal-close-btn::after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  height: 2px;
+  width: 30px;
+  background-color: #747474;
+  transform: rotate(-45deg);
+}
+
+.srea-template {
+  display: flex;
+}
+
+.srea-template .srea-reaction-item {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+  height: 28px;
+}
+
+.srea-template .srea-button {
+  cursor: pointer;
+}
+
+.srea-template .srea-template-count {
+  width: 23px;
+  text-align: center;
+  font-size: medium;
+}
+
+.srea-template .srea-button {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.srea-template .srea-button:focus, .srea-template .srea-button:active, .srea-template .srea-button:hover {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
